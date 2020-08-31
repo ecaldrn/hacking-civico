@@ -61,3 +61,17 @@ def densidad_poblacional(poblacion,area_ciudad):
  
  **Qué pasa al comparar varios estados o ciudades?**
  Permite inferir algunas cosas como el tipo de asentamiento (las zonas urbanas son regularmente más densas que las zonas rurales). De igual manera la densidad de población nos ayuda a conocer mejor el tipo de problemas que tienen las zonas comparadas.
+ 
+ **Gasto público en el ámbito de desarrollo social**
+* **2019**
+  * Nivel Federal: 
+  * Nivel Estatal: $49,469’041,584.91
+* 2020
+  * Nivel Federal: 
+  * Nivel Estatal: $48,542’831,578.33
+ 
+ 
+ ### Fuentes 
+ * [Data México](https://datamexico.org/)
+ * [Ley del presupuesto general de egresos estatal 2019](https://finanzas.guanajuato.gob.mx/c_legislacion/doc/leyes_estatales/Ley_del_Presupuesto_General_de_Egresos_2019.pdf)
+ * [Ley del presupuesto general de egresos estatal 2020](https://finanzas.guanajuato.gob.mx/c_legislacion/doc/leyes_estatales/ley_de_pge_del_estado_de_guanajuato_p_el_ejerc2020.pdf)
