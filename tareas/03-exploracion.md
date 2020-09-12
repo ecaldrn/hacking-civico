@@ -1,0 +1,14 @@
+# Explora un conjunto de datos para encontrar insights
+
+Exploración de los casos de COVID-19 en México usando el conjunto de datos abiertos de la secretaría de salud.
+Usa el siguiente [Notebook](https://colab.research.google.com/github/CodeandoMexico/hacking-civico/blob/master/notebooks/05_Exploracion_de_datos.ipynb) como referencia para hacer un análisis exploratorio de los datos.
+
+Puedes encontrar el conjunto de datos [aquí](https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico).
+
+Una vez que hayas explorado los datos responde las siguiente preguntas:
+
+- [ ] ¿Tienen los pacientes con hipertensión un riesgo más alto de defunción?
+- [ ] ¿Cuántos casos confirmados se tienen por Estado?
+- [ ] ¿Cuántas defunciones se tienen por Estado?
+- [ ] ¿Cuántos fallecimientos han ocurrido en el Estado con mayor número de casos confirmados?
+- [ ] ¿Cuántos fallecimientos han ocurrido en los pacientes Ambulatorios?
