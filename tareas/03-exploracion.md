@@ -8,6 +8,9 @@ Puedes encontrar el conjunto de datos [aquí](https://datos.gob.mx/busca/dataset
 Una vez que hayas explorado los datos responde las siguiente preguntas:
 
 - ## ¿Tienen los pacientes con hipertensión un riesgo más alto de defunción?
+```python
+data.groupby('hipertension').defuncion.value_counts(normalize=True)
+```
 Sí, comparado con las personas sin esta comorbilidad, los pacientes con hipertensión tienen un porcentaje de defunción **4.2** veces mayor.
 
 | Hipertensión | Defunción | porcentaje |
@@ -20,6 +23,10 @@ Sí, comparado con las personas sin esta comorbilidad, los pacientes con hiperte
 |              |    True   |  **0.165841**  |
 
 - ## ¿Cuántos casos confirmados se tienen por Estado?
+```python
+pd.set_option("max_rows", None)
+casos_entidades = data.groupby('entidad_um').resultado.value_counts()
+```
 |            entidad_um           |  #casos |
 |:-------------------------------:|:------:|
 |          AGUASCALIENTES         |  6351  |
@@ -56,6 +63,10 @@ Sí, comparado con las personas sin esta comorbilidad, los pacientes con hiperte
 |            ZACATECAS            |  6134  |
 
 - ## ¿Cuántas defunciones se tienen por Estado?
+```python
+defunciones_estado = data.groupby('entidad_um').defuncion.value_counts()
+defunciones_estado = defunciones_estado.sort_index()[1::2]
+```
 |            entidad_um           | # defunciones |
 |:-------------------------------:|:-------------:|
 |          AGUASCALIENTES         |      625      |
@@ -92,7 +103,13 @@ Sí, comparado con las personas sin esta comorbilidad, los pacientes con hiperte
 |            ZACATECAS            |      751      |
 
 - ## ¿Cuántos fallecimientos han ocurrido en el Estado con mayor número de casos confirmados?
+```python
+defunciones_estado['CIUDAD DE MÉXICO']
+```
 **15004** personas han fallecido en Ciudad de México, lugar donde hay el mayor número de casos confirmados.
 
 - ## ¿Cuántos fallecimientos han ocurrido en los pacientes Ambulatorios?
+```python
+defunciones_ambulatorio = data.groupby('tipo_paciente').defuncion.value_counts()
+```
 **9558** pacientes ambulatorios han fallecido.
